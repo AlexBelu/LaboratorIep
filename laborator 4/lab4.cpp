@@ -1,5 +1,4 @@
 #include <iostream>
-
 class Uncopyable{
     protected:
         Uncopyable(){}
@@ -63,6 +62,7 @@ void FootballTeam::printInfo(){
 int main(){
     Ball firstBall("Jabulani","Adidas","white",5);
    
+   
    FootballTeam team1("Real Madrid",28);  //prin constructor
    FootballTeam team2(team1);    //prin copy constructor
    FootballTeam team3;
@@ -71,9 +71,4 @@ int main(){
    team2.printInfo();
    team3.printInfo();
 
-
-//    Compilation error 
-//    Ball secondBall(firstBall);
-//    Ball thirdBall;
-//    thirdBall=firstBall;
 }
